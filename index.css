@@ -1,0 +1,23 @@
+table{
+  border-collapse: collapse;
+}
+table caption{
+  background-color: #083d63;
+  color:#fff;
+  border:2px solid gray;
+  border-bottom:none;
+  padding:10px;
+}
+table th{
+  background-color: #083d63;
+  color:#fff;
+}
+table th,table td,table tr{
+  border:2px solid gray;
+  padding:10px;
+}
+tfoot td{
+  font-size: 11px;
+  text-align: right;
+  background-color: #eae6e6;
+}
