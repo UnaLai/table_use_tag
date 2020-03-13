@@ -9,25 +9,26 @@
 </head>
 
 <body>
+  <h2>課表表格</h2>
   <table>
     <caption>課表</caption>
     <colgroup>
       <col span="5">
-      <col style="background-color: #42eeae;">
+      <col style="background-color: #a6f6f6;">
     </colgroup>
     <thead>
       <tr>
         <th>&nbsp;</th>
-        <th>一</th>
-        <th>二</th>
-        <th>三</th>
-        <th>四</th>
-        <th>五</th>
+        <th scope="col">一</th>
+        <th scope="col">二</th>
+        <th scope="col">三</th>
+        <th scope="col">四</th>
+        <th scope="col">五</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <th>1</th>
+        <th scope="row">1</th>
         <td>音樂</td>
         <td>美術</td>
         <td>歷史</td>
@@ -35,7 +36,7 @@
         <td>國文</td>
       </tr>
       <tr>
-        <th>2</th>
+        <th scope="row">2</th>
         <td>數學</td>
         <td>數學</td>
         <td>英文</td>
@@ -43,7 +44,7 @@
         <td>化學</td>
       </tr>
       <tr>
-        <th>3</th>
+        <th scope="row">3</th>
         <td>地理</td>
         <td>國文</td>
         <td>國文</td>
@@ -51,7 +52,7 @@
         <td>美勞</td>
       </tr>
       <tr>
-        <th>4</th>
+        <th scope="row">4</th>
         <td>數學</td>
         <td>體育</td>
         <td>地理</td>
@@ -62,6 +63,66 @@
     <tfoot>
       <tr>
         <td colspan="6">更新日期：2020/03/12</td>
+      </tr>
+    </tfoot>
+  </table>
+  
+  
+  <h2>添加上午欄位</h2>
+  <table>
+    <caption>課表</caption>
+    <colgroup>
+      <col span="5">
+      <col style="background-color: #a6f6f6;">
+    </colgroup>
+    <thead>
+      <tr>
+        <th colspan="2">&nbsp;</th>
+        <th scope="col">一</th>
+        <th scope="col">二</th>
+        <th scope="col">三</th>
+        <th scope="col">四</th>
+        <th scope="col">五</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th rowspan="4" scope="rowgroup">上午</th>
+        <th scope="row">1</th>
+        <td>音樂</td>
+        <td>美術</td>
+        <td>歷史</td>
+        <td>國文</td>
+        <td>國文</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>數學</td>
+        <td>數學</td>
+        <td>英文</td>
+        <td>英文</td>
+        <td>化學</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>地理</td>
+        <td>國文</td>
+        <td>國文</td>
+        <td>美勞</td>
+        <td>美勞</td>
+      </tr>
+      <tr>
+        <th scope="row">4</th>
+        <td>數學</td>
+        <td>體育</td>
+        <td>地理</td>
+        <td>物理</td>
+        <td>英文</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="7">更新日期：2020/03/12</td>
       </tr>
     </tfoot>
   </table>
